@@ -1,0 +1,23 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    Thanks to my teacher Jenni Pulli for all help and my fellow students for shared knowledge. 
+     
+# THANKS
+    Background image from https://www.pexels.com/photo/house-in-the-middle-of-crop-field-3330118/ 
+    Lato font from Google Webfont
+
+    LinkedIn icon from Font Awesome
+    Font Awesome link from https://cdnjs.com/libraries/font-awesome 
+
+# TECHNOLOGY COLOPHON
+    HTML5
+
+    Gimp for image processing
+    Color.adobe.com for color pick and accessibility
+    Webaim for contrast check between background and text
+    Scout-App for Sass
+    W3c for HTML validation
+    Jigsaw for CSS validation
+

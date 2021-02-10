@@ -1,0 +1,204 @@
+/* =============================================================================
+======================== GLOBAL & MIXINS    ====================================
+================================================================================ */
+$padding-15px: 15px;
+$padding-32px: 32px;
+$padding-35px: 35px;
+$margin-2px: 2px;
+
+@mixin center-max-width {
+    max-width: 500px;
+    margin: 0 auto;
+}
+@mixin a-hover {
+    border-bottom: 3px solid $brown-color; 
+}
+/* =============================================================================
+======================== /GLOBAL & MIXINS    ===================================
+================================================================================ */
+
+/* =============================================================================
+======================== HEADER       ==========================================
+================================================================================ */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 98vw;
+    z-index: 2;
+
+    h1 {
+        text-align: right;
+        font-family: 'Times New Roman', Times, serif; 
+    }
+    h1 a {
+        text-decoration: none;
+    }
+    a:hover {
+        padding: 6px;
+    }
+    span {
+        color: $beige-color;
+        background: $brown-color;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .h1-emma, .h1-hammar {
+        right: 8px;
+    }
+    .h1-emma {
+        position: absolute;
+    }
+    .h1-hammar {
+        position: relative;
+        top: 23px;
+    }
+}
+/* =============================================================================
+======================== /HEADER       =========================================
+================================================================================ */
+
+/* =============================================================================
+======================== INTRO SECTION       ===================================
+================================================================================ */
+.intro-section {
+    background-image: url(../../dist/img/house-on-corn-field-pexels-jeffrey-czum.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: 45% 94%;
+    background-size: cover;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 18vh;
+    padding-bottom: 30vh;
+    padding-left: $padding-35px;
+}
+
+.intro-content {
+    background: $blue-color;
+    @include center-max-width; 
+    position: absolute;
+    top: 50%;
+    padding-left: $padding-35px;
+    padding-right: $padding-35px;
+    text-shadow: 2px 2px $blue-color;
+    z-index: 1;
+
+    .p-margin-top {
+        margin-top: $margin-2px;
+        margin-bottom: $margin-2px;
+    }
+    .p-margin-bottom {
+        margin-bottom: $margin-2px;
+        margin-top: 8px;
+    }
+}
+/* =============================================================================
+======================== /INTRO SECTION       ==================================
+================================================================================ */
+
+/* =============================================================================
+======================== CV SECTION            =================================
+================================================================================ */
+.cv-section {
+    background: $beige-color;
+    padding-left: $padding-15px;
+    padding-right: $padding-15px;
+
+    h3 {
+        background: $light-green-color;
+        padding-left: 20px;
+        margin-bottom: 15px;
+        padding: 8px;
+    }
+    h4 {
+        margin-bottom: 0;
+        text-decoration: none;
+    }
+    a:hover {
+        @include a-hover;
+    }
+    p {
+        margin-top: 6px;
+    }
+}
+
+.cv-job, .cv-education {
+    @include center-max-width; 
+}
+
+.experience {
+    margin-top: 0;
+}
+
+.skills-section {
+    @include center-max-width; 
+
+    ul {
+        margin-bottom: 0;
+        padding-bottom: $padding-32px;
+    }
+    li {
+        padding-bottom: 0.5rem;
+    }
+}
+/* =============================================================================
+======================== /CV SECTION           =================================
+================================================================================ */
+
+/* =============================================================================
+======================== CONTACT SECTION       =================================
+================================================================================ */
+.contact-section {
+    background: $dark-green-color;
+    padding-bottom: $padding-15px;
+
+    h3, p, address {
+        @include center-max-width;
+    }
+    h3 {
+        margin-top: 0;
+        padding-top: $padding-32px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    p {
+        padding-left: $padding-15px;
+        padding-right: $padding-15px;
+    }
+    address {
+        text-align: center;
+        height: 10vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}
+
+.contact-details a:hover {
+    @include a-hover;
+}
+/* =============================================================================
+======================== /CONTACT SECTION      =================================
+================================================================================ */
+
+/* =============================================================================
+======================== FOOTER                =================================
+================================================================================ */
+footer {
+    background: $brown-color;
+    padding-top: $padding-32px;
+    text-align: center;
+    
+    p {
+        margin-bottom: 0;
+        padding-bottom: 8px;
+        color: $light-green-color;
+    }
+}
+/* =============================================================================
+======================== /FOOTER               =================================
+================================================================================ */

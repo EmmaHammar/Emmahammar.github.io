@@ -1,0 +1,21 @@
+/*
+* Table of Content 
+*
+* 01 - Vendor - normalize
+* 02 - Vars - Settings for colors, font-family, font-size and font-weight 
+* 03 - Layout - Generic layout for mobile (base), tablet and desktop screens
+*/
+
+@import "./vendor/normalize";
+
+@import "./vars/color";
+@import "./vars/fonts"; 
+
+@import "./layout/base";
+
+@media screen and (min-width: 850px) {
+    @import "./layout/tablet";
+}
+@media screen and (min-width: 1100px) {
+    @import "./layout/desktop";
+}
