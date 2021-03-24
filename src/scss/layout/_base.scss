@@ -13,6 +13,11 @@ $margin-2px: 2px;
 @mixin a-hover {
     border-bottom: 3px solid $brown-color; 
 }
+
+@mixin flexBox {
+    display: flex;
+}
+
 /* =============================================================================
 ======================== /GLOBAL & MIXINS    ===================================
 ================================================================================ */
@@ -103,10 +108,11 @@ h2 {
 /* =============================================================================
 ======================== CV SECTION            =================================
 ================================================================================ */
-.cv-section {
+.cv-container {
     background: $beige-color;
     padding-left: $padding-15px;
     padding-right: $padding-15px;
+    @include flexBox;
 
     h3 {
         background: $light-green-color;
@@ -126,7 +132,8 @@ h2 {
     }
 }
 
-.cv-job, .cv-education {
+
+.cv-job, .cv-education, .extra-activities-section {
     @include center-max-width; 
 }
 
