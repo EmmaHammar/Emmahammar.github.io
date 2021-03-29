@@ -6,6 +6,7 @@ $padding-32px: 32px;
 $padding-35px: 35px;
 $margin-2px: 2px;
 
+
 @mixin center-max-width {
     max-width: 500px;
     margin: 0 auto;
@@ -82,7 +83,7 @@ h2 {
     padding-left: $padding-35px;
 }
 
-#h3-education {
+.no-margin-top {
     margin-top: 0;
 }
 
