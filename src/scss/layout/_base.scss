@@ -82,6 +82,10 @@ h2 {
     padding-left: $padding-35px;
 }
 
+#h3-education {
+    margin-top: 0;
+}
+
 .intro-content {
     background: $blue-color;
     @include center-max-width; 
